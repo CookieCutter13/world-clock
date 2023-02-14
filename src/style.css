@@ -17,6 +17,7 @@ margin: 0 auto;
 display: block;
 }
 .container{
+  background-color: beige;
   display: block;
   margin: 0 auto;
  max-width: 300px;
