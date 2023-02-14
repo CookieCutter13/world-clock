@@ -15,7 +15,7 @@ footer{
 .city{
 font-size: 23px;
 margin: 0 auto;
-display: fl;
+display: flex;
 }
 .container{
   background-color: beige;
