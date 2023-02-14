@@ -1,5 +1,6 @@
 body{
   background-color: aliceblue;
+  font-family: sans-serif;
 }
 
 h1{
@@ -14,7 +15,7 @@ footer{
 .city{
 font-size: 23px;
 margin: 0 auto;
-display: block;
+display: fl;
 }
 .container{
   background-color: beige;
