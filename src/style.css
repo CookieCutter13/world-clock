@@ -16,3 +16,7 @@ font-size: 23px;
 margin: 0 auto;
 display: block;
 }
+.container{
+  border: 10px solid rgba(180, 177, 188, 0.2);
+border-radius: 20px;
+}
