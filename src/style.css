@@ -20,7 +20,7 @@ display: block;
   background-color: beige;
   display: block;
   margin: 0 auto;
- max-width: 300px;
+ max-width: 500px;
   border: 10px solid rgba(180, 177, 188, 0.2);
 border-radius: 20px;
 }
