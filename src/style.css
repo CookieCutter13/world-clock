@@ -17,6 +17,8 @@ margin: 0 auto;
 display: block;
 }
 .container{
+  display: block;
+  margin: 0 auto;
  max-width: 300px;
   border: 10px solid rgba(180, 177, 188, 0.2);
 border-radius: 20px;
