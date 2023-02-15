@@ -1,5 +1,3 @@
-let citySelect = document.querySelector("#city");
-citySelect.addEventListener("change", showTime);
 
 let parisTime = moment()
   .tz("Europe/Paris")
