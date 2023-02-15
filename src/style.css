@@ -21,6 +21,9 @@ footer{
     padding: 10px;
     font-size: 18px;
   }
+  .time{
+    justify-content: space-between;
+  }
 .city{
 font-size: 23px;
 margin: 0 auto;
