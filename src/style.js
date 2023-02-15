@@ -1,4 +1,7 @@
 
+
+
+
 let citySelect = document.querySelector("#city");
 citySelect.addEventListener("change", showTime);
 
@@ -7,10 +10,18 @@ let parisTime = moment()
   .format("dddd, MMMM, D, YYYY h:mm A");
 let parisElement = document.querySelector("#paris");
 
+
+
 let laTime = moment()
   .tz("")
   .format("dddd, MMMM D, YYYY h:mm A");
 let laElement = document.querySelector("#los-angeles");
+let laDateElement= laElement.querySelector('.date');
+let laTimeElement = laElement.querySelector('.time')
+laDateElement.innerHTML = moment()
+  .tz("")
+  .format("dddd, MMMM D, YYYY ");
+laTimeElement.innerHTML = "h:mm A";
 
 let tokyoTime = moment()
 tz("Asia/Tokyo")
