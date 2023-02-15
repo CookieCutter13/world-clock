@@ -19,7 +19,7 @@ let laElement = document.querySelector("#los-angeles");
 let laDateElement= laElement.querySelector('.date');
 let laTimeElement = laElement.querySelector('.time')
 laDateElement.innerHTML = 
-  laTime.format(" MMMM Do, YYYY ");
+  laTime.format("MMMM Do, YYYY ");
 laTimeElement.innerHTML = "h:mm A";
 
 let tokyoTime = moment()
