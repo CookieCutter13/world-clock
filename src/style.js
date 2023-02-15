@@ -4,7 +4,7 @@ citySelect.addEventListener("change", showTime);
 let parisTime = moment()
   .tz("Europe/Paris")
   .format("dddd, MMMM, D, YYYY h:mm A");
-let parisElement = document.querySelector("#parisTime");
+let parisElement = document.querySelector("#paris");
 
 let Time = moment()
   .tz("")
