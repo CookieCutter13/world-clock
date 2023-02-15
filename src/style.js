@@ -14,13 +14,6 @@ let tokyoTime = moment().tz("Asia/Tokyo");
 tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do, YYYY ");
 tokyoTimeElement.innerHTML = tokyoTime.format("h:mm:ss [<small>]A[</small>]");
 
-let zagrebElement = document.querySelector("#zagreb");
-let zagrebDateElement = zagrebElement.querySelector(".date");
-let zagrebTimeElement = zagrebElement.querySelector(".time");
-let zagrebTime = moment().tz("Erope/Zagreb");
-
-zagrebDateElement.innerHTML = zagrebTime.format("MMMM Do, YYYY ");
-zagrebTimeElement.innerHTML = zagrebTime.format("h:mm:ss [<small>]A[</small>]");
 
 let parisElement = document.querySelector("#paris");
 let parisDateElement = parisElement.querySelector(".date");
