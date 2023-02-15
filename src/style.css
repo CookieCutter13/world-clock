@@ -12,6 +12,12 @@ h2{
 footer{
   text-align: center;
 }
+  select{
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px;
+  }
 .city{
 font-size: 23px;
 margin: 0 auto;
