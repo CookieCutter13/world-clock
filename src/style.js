@@ -1,9 +1,7 @@
-
 let parisTime = moment()
   .tz("Europe/Paris")
   .format("dddd, MMMM, D, YYYY h:mm A");
 let parisElement = document.querySelector("#paris");
-
 
 let laElement = document.querySelector("#los-angeles");
 let laDateElement = laElement.querySelector(".date");
