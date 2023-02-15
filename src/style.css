@@ -22,13 +22,16 @@ footer{
     font-size: 18px;
   }
   .time{
-    display: flex;
-    justify-content: space-between;
+   font-size: 36px;
+   font-weight: bold;
+
   }
 .city{
+  display: flex;
+    justify-content: space-between;
 font-size: 23px;
-margin: 0 auto;
-display: block;
+
+
 }
 .container{
   background-color: beige;
