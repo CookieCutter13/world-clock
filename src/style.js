@@ -1,37 +1,37 @@
-setInterval(function() {
+function updateTime() {
+  let laElement = document.querySelector("#los-angeles");
+  let laDateElement = laElement.querySelector(".date");
+  let laTimeElement = laElement.querySelector(".time");
+  let laTime = moment().tz("America/Los_Angeles");
 
+  laDateElement.innerHTML = laTime.format("MMMM Do, YYYY ");
+  laTimeElement.innerHTML = laTime.format("h:mm:ss [<small>]A[</small>]");
 
-let laElement = document.querySelector("#los-angeles");
-let laDateElement = laElement.querySelector(".date");
-let laTimeElement = laElement.querySelector(".time");
-let laTime = moment().tz("America/Los_Angeles");
+  let tokyoElement = document.querySelector("#tokyo");
+  let tokyoDateElement = tokyoElement.querySelector(".date");
+  let tokyoTimeElement = tokyoElement.querySelector(".time");
+  let tokyoTime = moment().tz("Asia/Tokyo");
 
-laDateElement.innerHTML = laTime.format("MMMM Do, YYYY ");
-laTimeElement.innerHTML = laTime.format("h:mm:ss [<small>]A[</small>]");
-},1000);
+  tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do, YYYY ");
+  tokyoTimeElement.innerHTML = tokyoTime.format("h:mm:ss [<small>]A[</small>]");
 
+  let parisElement = document.querySelector("#paris");
+  let parisDateElement = parisElement.querySelector(".date");
+  let parisTimeElement = parisElement.querySelector(".time");
+  let parisTime = moment().tz("Europe/Paris");
 
-let tokyoElement = document.querySelector("#tokyo");
-let tokyoDateElement = tokyoElement.querySelector(".date");
-let tokyoTimeElement = tokyoElement.querySelector(".time");
-let tokyoTime = moment().tz("Asia/Tokyo");
+  parisDateElement.innerHTML = parisTime.format("MMMM Do, YYYY ");
+  parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
 
-tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do, YYYY ");
-tokyoTimeElement.innerHTML = tokyoTime.format("h:mm:ss [<small>]A[</small>]");
+  let londonElement = document.querySelector("#london");
+  let londonDateElement = londonElement.querySelector(".date");
+  let londonTimeElement = londonElement.querySelector(".time");
+  let londonTime = moment().tz("Europe/London");
 
-
-let parisElement = document.querySelector("#paris");
-let parisDateElement = parisElement.querySelector(".date");
-let parisTimeElement = parisElement.querySelector(".time");
-let parisTime = moment().tz("Europe/Paris");
-
-parisDateElement.innerHTML = parisTime.format("MMMM Do, YYYY ");
-parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
-
-let londonElement = document.querySelector("#london");
-let londonDateElement = londonElement.querySelector(".date");
-let londonTimeElement = londonElement.querySelector(".time");
-let londonTime = moment().tz("Europe/London");
-
-londonDateElement.innerHTML = londonTime.format("MMMM Do, YYYY ");
-londonTimeElement.innerHTML = londonTime.format("h:mm:ss [<small>]A[</small>]");
+  londonDateElement.innerHTML = londonTime.format("MMMM Do, YYYY ");
+  londonTimeElement.innerHTML = londonTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
+}
+updateTime();
+setInterval(updateTime, 1000);
