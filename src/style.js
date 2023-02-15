@@ -17,23 +17,23 @@ tokyoTimeElement.innerHTML = tokyoTime.format("h:mm :ss [<small>]A[</small>]");
 let zagrebElement = document.querySelector("#zagreb");
 let zagrebDateElement = zagrebElement.querySelector(".date");
 let xagrebTimeElement = zagrebElement.querySelector(".time");
-let zagrebTime = moment().tz("");
+let zagrebTime = moment().tz("Erope/Zagreb");
 
 zagrebDateElement.innerHTML = zagrebTime.format("MMMM Do, YYYY ");
 zagrebTimeElement.innerHTML = zagrebTime.format("h:mm :ss [<small>]A[</small>]");
 
-let Element = document.querySelector("#");
-let DateElement = Element.querySelector(".date");
-let TimeElement = Element.querySelector(".time");
-let Time = moment().tz("");
+let parisElement = document.querySelector("#paris");
+let parisDateElement = parisElement.querySelector(".date");
+let parisTimeElement = parisElement.querySelector(".time");
+let parisTime = moment().tz("");
 
-DateElement.innerHTML = Time.format("MMMM Do, YYYY ");
-TimeElement.innerHTML = Time.format("h:mm :ss [<small>]A[</small>]");
+parisDateElement.innerHTML = parisTime.format("MMMM Do, YYYY ");
+parisTimeElement.innerHTML = parisTime.format("h:mm :ss [<small>]A[</small>]");
 
-let Element = document.querySelector("#los-angeles");
-let DateElement = Element.querySelector(".date");
-let TimeElement = Element.querySelector(".time");
-let Time = moment().tz("");
+let londonElement = document.querySelector("#london");
+let londonDateElement = londonElement.querySelector(".date");
+let londonTimeElement = londonElement.querySelector(".time");
+let londonTime = moment().tz("");
 
-DateElement.innerHTML = Time.format("MMMM Do, YYYY ");
-TimeElement.innerHTML = Time.format("h:mm :ss [<small>]A[</small>]");
+londonDateElement.innerHTML = londonTime.format("MMMM Do, YYYY ");
+londonTimeElement.innerHTML = londonTime.format("h:mm :ss [<small>]A[</small>]");
