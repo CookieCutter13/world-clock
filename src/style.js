@@ -1,3 +1,6 @@
+setInterval(function() {
+
+
 let laElement = document.querySelector("#los-angeles");
 let laDateElement = laElement.querySelector(".date");
 let laTimeElement = laElement.querySelector(".time");
@@ -5,6 +8,8 @@ let laTime = moment().tz("America/Los_Angeles");
 
 laDateElement.innerHTML = laTime.format("MMMM Do, YYYY ");
 laTimeElement.innerHTML = laTime.format("h:mm:ss [<small>]A[</small>]");
+},1000);
+
 
 let tokyoElement = document.querySelector("#tokyo");
 let tokyoDateElement = tokyoElement.querySelector(".date");
