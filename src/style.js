@@ -16,7 +16,7 @@ tokyoTimeElement.innerHTML = tokyoTime.format("h:mm:ss [<small>]A[</small>]");
 
 let zagrebElement = document.querySelector("#zagreb");
 let zagrebDateElement = zagrebElement.querySelector(".date");
-let xagrebTimeElement = zagrebElement.querySelector(".time");
+let zagrebTimeElement = zagrebElement.querySelector(".time");
 let zagrebTime = moment().tz("Erope/Zagreb");
 
 zagrebDateElement.innerHTML = zagrebTime.format("MMMM Do, YYYY ");
