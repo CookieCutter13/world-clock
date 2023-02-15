@@ -13,14 +13,13 @@ let parisElement = document.querySelector("#paris");
 
 
 let laTime = moment()
-  .tz("")
+  
   .format("dddd, MMMM D, YYYY h:mm A");
 let laElement = document.querySelector("#los-angeles");
 let laDateElement= laElement.querySelector('.date');
 let laTimeElement = laElement.querySelector('.time')
-laDateElement.innerHTML = moment()
-  .tz("")
-  .format("dddd, MMMM D, YYYY ");
+laDateElement.innerHTML = 
+  laTime.format(" MMMM Do, YYYY ");
 laTimeElement.innerHTML = "h:mm A";
 
 let tokyoTime = moment()
