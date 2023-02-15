@@ -1,3 +1,6 @@
+alert ("hi")
+
+
 let citySelect = document.querySelector("#city");
 citySelect.addEventListener("change", showTime);
 
