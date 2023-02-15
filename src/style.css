@@ -38,9 +38,10 @@ line-height: 36px;
 }
 .city{
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
 font-size: 23px;
 margin: 20px 0;
+border-bottom: 1px dashed gray;
 
 }
 .container{
