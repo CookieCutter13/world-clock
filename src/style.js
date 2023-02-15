@@ -4,7 +4,7 @@ let laTimeElement = laElement.querySelector(".time");
 let laTime = moment().tz("America/Los_Angeles");
 
 laDateElement.innerHTML = laTime.format("MMMM Do, YYYY ");
-laTimeElement.innerHTML = laTime.format("h:mm :ss [<small>]A[</small>]");
+laTimeElement.innerHTML = laTime.format("h:mm:ss [<small>]A[</small>]");
 
 let tokyoElement = document.querySelector("#tokyo");
 let tokyoDateElement = tokyoElement.querySelector(".date");
@@ -12,7 +12,7 @@ let tokyoTimeElement = tokyoElement.querySelector(".time");
 let tokyoTime = moment().tz("Asia/Tokyo");
 
 tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do, YYYY ");
-tokyoTimeElement.innerHTML = tokyoTime.format("h:mm :ss [<small>]A[</small>]");
+tokyoTimeElement.innerHTML = tokyoTime.format("h:mm:ss [<small>]A[</small>]");
 
 let zagrebElement = document.querySelector("#zagreb");
 let zagrebDateElement = zagrebElement.querySelector(".date");
@@ -20,20 +20,20 @@ let xagrebTimeElement = zagrebElement.querySelector(".time");
 let zagrebTime = moment().tz("Erope/Zagreb");
 
 zagrebDateElement.innerHTML = zagrebTime.format("MMMM Do, YYYY ");
-zagrebTimeElement.innerHTML = zagrebTime.format("h:mm :ss [<small>]A[</small>]");
+zagrebTimeElement.innerHTML = zagrebTime.format("h:mm:ss [<small>]A[</small>]");
 
 let parisElement = document.querySelector("#paris");
 let parisDateElement = parisElement.querySelector(".date");
 let parisTimeElement = parisElement.querySelector(".time");
-let parisTime = moment().tz("");
+let parisTime = moment().tz("Europe/Paris");
 
 parisDateElement.innerHTML = parisTime.format("MMMM Do, YYYY ");
-parisTimeElement.innerHTML = parisTime.format("h:mm :ss [<small>]A[</small>]");
+parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
 
 let londonElement = document.querySelector("#london");
 let londonDateElement = londonElement.querySelector(".date");
 let londonTimeElement = londonElement.querySelector(".time");
-let londonTime = moment().tz("");
+let londonTime = moment().tz("Europe/London");
 
 londonDateElement.innerHTML = londonTime.format("MMMM Do, YYYY ");
-londonTimeElement.innerHTML = londonTime.format("h:mm :ss [<small>]A[</small>]");
+londonTimeElement.innerHTML = londonTime.format("h:mm:ss [<small>]A[</small>]");
