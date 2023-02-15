@@ -15,12 +15,12 @@ tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do, YYYY ");
 tokyoTimeElement.innerHTML = tokyoTime.format("h:mm :ss [<small>]A[</small>]");
 
 let zagrebElement = document.querySelector("#zagreb");
-let zagrebDateElement = Element.querySelector(".date");
-let xagrebTimeElement = Element.querySelector(".time");
+let zagrebDateElement = zagrebElement.querySelector(".date");
+let xagrebTimeElement = zagrebElement.querySelector(".time");
 let zagrebTime = moment().tz("");
 
-zagrebDateElement.innerHTML = Time.format("MMMM Do, YYYY ");
-zagrebTimeElement.innerHTML = Time.format("h:mm :ss [<small>]A[</small>]");
+zagrebDateElement.innerHTML = zagrebTime.format("MMMM Do, YYYY ");
+zagrebTimeElement.innerHTML = zagrebTime.format("h:mm :ss [<small>]A[</small>]");
 
 let Element = document.querySelector("#");
 let DateElement = Element.querySelector(".date");
