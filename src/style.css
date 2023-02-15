@@ -49,6 +49,7 @@ border-bottom: 1px dashed gray;
 }
 .container{
   background-color: beige;
+  opacity: 0.5;
   padding: 30px;
  margin: 0 auto;
  max-width: 600px;
