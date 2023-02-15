@@ -6,21 +6,21 @@ let parisTime = moment()
   .format("dddd, MMMM, D, YYYY h:mm A");
 let parisElement = document.querySelector("#paris");
 
-let Time = moment()
+let laTime = moment()
   .tz("")
   .format("dddd, MMMM D, YYYY h:mm A");
-let Element = document.querySelector("#");
+let laElement = document.querySelector("#los-angeles");
 
 let tokyoTime = moment()
 tz("Asia/Tokyo")
 .format("dddd, MMMM D, YYYY h:mm A");
 let tokyoElement = document.querySelector("#tokyo");
 
-let Time = moment()
+let zagrebTime = moment()
   .tz("")
   .format("dddd, MMMM D, YYYY h:mm A");
-let Element = document.querySelector("#");
+let zagrebElement = document.querySelector("#zagreb");
 
-let Time = moment();
+let londonTime = moment();
 tz("").format("dddd, MMMM D, YYYY h:mm A");
-let Element = document.querySelector("#");
+let londonElement = document.querySelector("#london");
