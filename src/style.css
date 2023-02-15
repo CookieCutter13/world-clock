@@ -52,7 +52,7 @@ border-bottom: 1px dashed gray;
   padding: 30px;
  margin: 0 auto;
  max-width: 600px;
-  border: 8px solid rgba(180, 177, 188, 0.2);
+  border: 6px solid rgba(180, 177, 188, 0.2);
 border-radius: 20px;
 box-shadow: 5px;
 }
