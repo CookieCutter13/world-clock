@@ -6,7 +6,7 @@ let parisTime = moment()
   .format("dddd, MMMM, D, YYYY h:mm A");
 let parisElement = document.querySelector("#paris");
 
-let laTime = moment().format("dddd, MMMM D, YYYY h:mm A");
+let laTime = moment().tz("America/Los_Angeles");
 let laElement = document.querySelector("#los-angeles");
 let laDateElement = laElement.querySelector(".date");
 let laTimeElement = laElement.querySelector(".time");
