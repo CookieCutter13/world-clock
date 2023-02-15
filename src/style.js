@@ -37,10 +37,11 @@ function updateTime() {
 function updateCity(event) {
   console.log(event);
   let cityTimeZone = event.target.value;
+  let cityName = cityTimeZone.replace.("_", "").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
-  citiesElement.innerHTML = cityTimeZone;
-  citiesElement = `
+
+  citiesElement.innerHTML = `
 <div class="city">
         <div>
           <h2>${cityTimeZone}</h2>
