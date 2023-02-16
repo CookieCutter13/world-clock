@@ -60,12 +60,13 @@ function updateCity(event) {
         </div>
         <div class="time">${cityTime.format(
           "h:mm:ss "
-        )}<small>${cityTime.format("h:mm:ss")}<small>${cityTime.format("A")}</small></div>
+        )}<small>${cityTime.format("h:mm:ss")}<small>${cityTime.format(
+    "A"
+  )}</small></div>
       </div>`;
 }
 updateTime();
 setInterval(updateTime, 1000);
 
-let citySelect = document.querySelector("#city");
-citySelect.addEventListener("change", updateCity);
-
+let citiesSelectElement = document.querySelector("#city");
+citiesSelectElement.addEventListener("change", updateCity);
