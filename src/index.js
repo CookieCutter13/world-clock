@@ -43,6 +43,17 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+  let zagrebElement = document.querySelector("#zagreb");
+  if(zagrebElement){
+  let zagrebDateElement = zagrebElement.querySelector(".date");
+  let zagrebTimeElement = zagrebElement.querySelector(".time");
+  let zagrebTime = moment().tz("Erope/Zagreb");
+
+  zagrebDateElement.innerHTML = zagrebTime.format("MMMM Do, YYYY ");
+  zagrebTimeElement.innerHTML = zagrebTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );}
+
 }
 
 function updateCity(event) {
