@@ -47,7 +47,7 @@ function updateTime() {
   if(zagrebElement){
   let zagrebDateElement = zagrebElement.querySelector(".date");
   let zagrebTimeElement = zagrebElement.querySelector(".time");
-  let zagrebTime = moment().tz("Erope/Zagreb");
+  let zagrebTime = moment().tz("Europe/Zagreb");
 
   zagrebDateElement.innerHTML = zagrebTime.format("MMMM Do, YYYY ");
   zagrebTimeElement.innerHTML = zagrebTime.format(
