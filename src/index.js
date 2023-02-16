@@ -1,6 +1,6 @@
 function updateTime() {
   let laElement = document.querySelector("#los-angeles");
-  if (laElement){}
+  if (laElement){
   let laDateElement = laElement.querySelector(".date");
   let laTimeElement = laElement.querySelector(".time");
   let laTime = moment().tz("America/Los_Angeles");
