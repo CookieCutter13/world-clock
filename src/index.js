@@ -43,6 +43,17 @@ function updateTime() {
     "h:mm:ss [<small>]A[</small>]"
   );}
 
+      let nyElement = document.querySelector("#new-york");
+      if (nyElement) {
+        let nyDateElement = nyElement.querySelector(".date");
+        let nyTimeElement = nyElement.querySelector(".time");
+        let nyTime = moment().tz("America/New_York");
+
+        nyDateElement.innerHTML = nyTime.format("MMMM Do, YYYY ");
+        nyTimeElement.innerHTML = nyTime.format("h:mm:ss [<small>]A[</small>]");
+      }
+
+
 }
 
 function updateCity(event) {
@@ -66,16 +77,6 @@ citiesElement.innerHTML = `
     "A"
   )}</small></div>
       </div>`;
-
-      let nyElement = document.querySelector("#new-york");
-      if (nyElement) {
-        let nyDateElement = nyElement.querySelector(".date");
-        let nyTimeElement = nyElement.querySelector(".time");
-        let nyTime = moment().tz("America/New_York");
-
-        nyDateElement.innerHTML = nyTime.format("MMMM Do, YYYY ");
-        nyTimeElement.innerHTML = nyTime.format("h:mm:ss [<small>]A[</small>]");
-      }
 
 }
 updateTime();
